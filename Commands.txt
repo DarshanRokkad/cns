@@ -1,0 +1,8 @@
+To execute c program
+cmd 1 -> gcc program_name.c
+cmd 2 -> ./a.out
+
+
+To execute java program
+cmd 1 -> javac program_name.java
+cmd 2 -> java program_name
