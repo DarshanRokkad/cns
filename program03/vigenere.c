@@ -10,7 +10,7 @@ void encrypt(char* s, char* key, char* ciphertext){
             j = 0;
         }
         int curr = toupper(s[i]) - 'A';
-        int shift = toupper(key[i]) - 'A';
+        int shift = toupper(key[j]) - 'A';
         char ch = ((curr + shift) % 26) + 'A';              // encrypted character
         ciphertext[i] = ch;
     }
@@ -24,7 +24,7 @@ void decrypt(char* s, char* key, char* plaintext){
             j = 0;
         }
         int curr = toupper(s[i]) - 'A';
-        int shift = toupper(key[i]) - 'A';
+        int shift = toupper(key[j]) - 'A';
         char ch = ((curr - shift + 26) % 26) + 'A';         // decrypted character
         plaintext[i] = ch;
     }

@@ -19,7 +19,7 @@ public class sha {
             }
             hexString+=hex;
         }
-        System.out.println("SHA-512 Hash: " + hexString.toString()); 
+        System.out.println("SHA-512 Hash: " + hexString); 
     }
 }
 

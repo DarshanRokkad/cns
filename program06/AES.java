@@ -22,20 +22,17 @@ public class AES {
         return new String(decryptedBytes);
     }
 
-    public static void main(String[] args) {
-        try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter text to encrypt:");
-            String plainText = scanner.nextLine();
-            SecretKey secretKey = generateKey(128);
-            String encryptedText = encrypt(plainText, secretKey);
-            System.out.println("Encrypted Text: " + encryptedText);
-            String decryptedText = decrypt(encryptedText, secretKey);
-            System.out.println("Decrypted Text: " + decryptedText);
-            scanner.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter text to encrypt:");
+        String plainText = scanner.nextLine();
+        SecretKey secretKey = generateKey(128);
+        String encryptedText = encrypt(plainText, secretKey);
+        System.out.println("Encrypted Text: " + encryptedText);
+        String decryptedText = decrypt(encryptedText, secretKey);
+        System.out.println("Decrypted Text: " + decryptedText);
+        scanner.close();
+
     }
 }
 
