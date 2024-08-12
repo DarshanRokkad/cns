@@ -6,3 +6,6 @@ cmd 2 -> ./a.out
 To execute java program
 cmd 1 -> javac program_name.java
 cmd 2 -> java program_name
+
+To run program7
+cmd 1 -> xdg -open index.html
