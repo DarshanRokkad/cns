@@ -100,8 +100,7 @@ int main()
     int rails, choice;
 
     printf("Enter a Secret Message : ");
-    fgets(message, sizeof(message), stdin);
-    message[strcspn(message, "\n")] = '\0';
+    scanf("%s", &message);
 
     printf("Enter number of rails : ");
     scanf("%d", &rails);
